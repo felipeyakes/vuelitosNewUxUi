@@ -77,6 +77,10 @@ footer{
     border-top: 2px solid rgb(183, 183, 183);
 }
 
+.experiencesContainerProgram{
+    border-top: 2px solid rgb(183, 183, 183);
+}
+
 .sPBigger{
     font-size: 20px;
 }
@@ -84,6 +88,12 @@ footer{
 .mP{
     font-weight: 900;
     font-size: 17px;
+}
+
+.mPExperience{
+    font-weight: 900;
+    font-size: 17px;
+    margin-top: 40px;
 }
 
 .mPBigger{
@@ -116,7 +126,7 @@ footer{
     display: inline-block;
     background-color: rgb(98, 103, 204);
     border-radius: 5px;
-    padding: 10px 20px; /* Añade padding para que el enlace sea visible */
+    padding: 10px 20px;
 }
 
 #purpleButtonActiveMobile{
@@ -124,6 +134,7 @@ footer{
     background-color: rgb(98, 103, 204);
     border-radius: 5px;
     padding: 10px 20px; /* Añade padding para que el enlace sea visible */
+    color: rgb(255, 255, 255) !important;
 }
 
 .tripDuration{
@@ -184,12 +195,6 @@ footer{
     }
 }
 
-@media (max-width: 600px) {
-    .logoDesktop {
-    display: none;
-    }
-}
-
 @media (max-width: 375px) {
     .defaultPic{
         width: 330px;
@@ -197,6 +202,128 @@ footer{
     }
 }
 
+@media (max-width: 600px) {
+    .logoDesktop {
+    display: none;
+    }
+
+    .navDesktop{
+        display: none;
+    }
+
+    .mobileHidden{
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .navMobile{
+        display: none;
+    }
+
+    .mpExperience{
+        margin-top: 0;
+    }
+
+    .desktopHidden{
+        display: none;
+    }
+
+    .mP{
+        font-size: 21px;
+    }
+
+    .xxlP{
+        font-size: 39px;
+    }
+
+    .sPBigger{
+        font-size: 25px;
+    }
+
+    .mPBigger{
+        font-size: 35px;
+    }
+
+    .sPBigger{
+        font-size: 25px;
+    }
 
 
+    .logoDesktop{
+        width: 280px;
+        margin-top: 17px;
+        margin-left: 30px;
+    }
 
+    .navDesktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    .logoDesktop {
+        order: 1;
+    }
+    
+    .navDesktop ul {
+        margin: 0;
+        padding: 0;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    
+    .navDesktop li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .navDesktop a{
+        color: rgb(98, 103, 204) !important;
+    }
+
+    .indexH1{
+        font-size: 60px;
+
+    }
+
+    .defaultPic{
+        width: 450px;
+        height: 350px;
+
+    }
+
+    .desktopOrganizerMandatory{
+        display: flex;
+        gap: 100px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .desktopOrganizerLeft{
+        max-width: 500px;
+    }
+
+    .desktopOrganizerRight{
+        max-width: 500px;
+    }
+
+    .marginLeftRight{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .experiencesContainerProgram{
+        border: 2px solid rgb(183, 183, 183);
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
+
+    .defaultPicContainer{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+}

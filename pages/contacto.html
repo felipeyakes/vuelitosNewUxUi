@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+      <div class="navMobile">
         <nav class="navbar bg-body pt-3 pb-3">
             <div class="container-fluid">
               <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
@@ -43,8 +44,19 @@
               </div>
             </div>
           </nav>
+        </div>
     
-        <img src="#" alt="Logotipo vuelitos.ar" class="logoDesktop">
+          <nav class="navDesktop">
+            <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoDesktop">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./faq.html">Preguntas frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./sobre-nosotros.html">¿Quiénes somos?</a></li>
+                <li><a href="./experiencias.html" id="purpleButtonActiveMobile">Nuestras experiencias</a></li>
+            </ul>
+        </nav>
+
     </header>
     
     <main>
@@ -52,17 +64,21 @@
             <h1 class="defaultH1 mt-5">Contacto</h1>
             <h2 class="defaultH2 mt-2">Nuestros medios de contacto.</h2>
         </div>
-
-        <div class="mt-5 text-center">
-            <p class="mPBigger">WhatsApp</p>
-            <p class="sPBigger">+54 9 11 1234 5678</p>
-            <a href="#" class="greenActiveButton mb-4 mt-2 text-white">Iniciar Chat</a>
-        </div>
-
-        <div class="mt-5 mb-5 text-center">
-            <p class="mPBigger">E-Mail</p>
-            <p class="sPBigger">hola@vuelitos.ar</p>
-            <a href="#" class="greenActiveButton mb-4 mt-2 text-white">Enviar E-Mail</a>
+        <div class="desktopOrganizerMandatory">
+          <div class="desktopOrganizerRight">
+            <div class="mt-5 text-center">
+                <p class="mPBigger">WhatsApp</p>
+                <p class="sPBigger">+54 9 11 1234 5678</p>
+                <a href="#" class="greenActiveButton mb-4 mt-2 text-white">Iniciar Chat</a>
+            </div>
+          </div>
+          <div class="desktopOrganizerLeft">
+            <div class="mt-5 mb-5 text-center">
+                <p class="mPBigger">E-Mail</p>
+                <p class="sPBigger">hola@vuelitos.ar</p>
+                <a href="#" class="greenActiveButton mb-4 mt-2 text-white">Enviar E-Mail</a>
+            </div>
+          </div>  
         </div>
 
     </main>

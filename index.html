@@ -10,83 +10,141 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body pt-3 pb-3">
-            <div class="container-fluid">
-              <img src="./img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <img src="./img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="navMobile">
+            <nav class="navbar bg-body pt-3 pb-3">
+                <div class="container-fluid">
+                  <img src="./img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="./img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages/faq.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">¿Quiénes somos?</a>
+                          </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link text-white" id="purpleButtonActiveMobile" href="./pages/experiencias.html">Nuestras Experiencias</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./pages/faq.html">Preguntas frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/sobre-nosotros.html">¿Quiénes somos?</a>
-                      </li>
-                      <li class="nav-item mt-3">
-                        <a class="nav-link text-white" id="purpleButtonActiveMobile" href="./pages/experiencias.html">Nuestras Experiencias</a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-    
-        <img src="#" alt="Logotipo vuelitos.ar" class="logoDesktop">
+              </nav>
+        </div>
+
+
+        
+        <nav class="navDesktop">
+            <img src="./img/logo.png" alt="Logotipo vuelitos.ar" class="logoDesktop">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/faq.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/sobre-nosotros.html">¿Quiénes somos?</a></li>
+                <li><a href="./pages/experiencias.html" id="purpleButtonActiveMobile">Nuestras experiencias</a></li>
+            </ul>
+        </nav>
+
     </header>
     
     <main>
         <div class="marginLeftRight">
-            <h1 class="indexH1 mt-5">¿Estás listo para volar?</h1>
-            <h2 class="indexH2 mt-4">Conocé nuestras experiencias y programas disponibles.</h2>
-            <a href="#" class="purpleActiveButton mb-4 mt-4 text-white">Nuestras Experiencias</a>
-            <div class="defaultPicContainer">
-                <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+            <div class="desktopOrganizerMandatory">
+                <div class="desktopOrganizerLeft">
+                    <h1 class="indexH1 mt-5">¿Estás listo para volar?</h1>
+                    <h2 class="indexH2 mt-4">Conocé nuestras experiencias y programas disponibles.</h2>
+                    <a href="#" class="purpleActiveButton mb-4 mt-4 text-white">Nuestras Experiencias</a>
+                </div>
+
+                <div class="desktopOrganizerRight">
+                    <div class="defaultPicContainer">
+                        <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="experiencesContainer">
-            <div class="marginLeftRight">
-                <p class="mP mb-2 mt-4">PROGRAMAS</p>
-                <p class="xxlP mb-1">Piloto por un día</p>
-                <p class="mP mb-4">Nuestro programa más vendido.</p>
-                <p class="sP mb-0">Viví la experiencia de ser piloto por un día. Incluye
-                    una clase teórica, una experiencia en un simulador de vuelo y un
-                    vuelo en una de nuestras aeronaves C-150 donde podrás poner en práctica
-                    todo lo aprendido en tierra.
-                </p>
-                <a href="#" class="greenActiveButton mb-4 mt-4 text-white">Conocé más</a>
+        <div class="mobileHidden">
+            <div class="experiencesContainer">
+                <div class="marginLeftRight">
+                    <div class="desktopOrganizerMandatory">
+                        <div class="desktopOrganizerRight">
+                            <div class="defaultPicContainer">
+                                <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+                            </div>
+                        </div>
+                        <div class="desktopOrganizerLeft">
+                            <p class="mP mb-2 mt-4">PROGRAMAS</p>
+                            <p class="xxlP mb-1">Piloto por un día</p>
+                            <p class="mP mb-4">Nuestro programa más vendido.</p>
+                            <p class="sP mb-0">Viví la experiencia de ser piloto por un día. Incluye
+                                una clase teórica, una experiencia en un simulador de vuelo y un
+                                vuelo en una de nuestras aeronaves C-150 donde podrás poner en práctica
+                                todo lo aprendido en tierra.
+                            </p>
+                            <a href="#" class="greenActiveButton mb-4 mt-4 text-white">Conocé más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <div class="defaultPicContainer">
-                    <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+        <div class="desktopHidden">
+            <div class="experiencesContainer">
+                <div class="marginLeftRight">
+                    <div class="desktopOrganizerMandatory">
+                        <div class="desktopOrganizerLeft">
+                            <p class="mP mb-2 mt-4">PROGRAMAS</p>
+                            <p class="xxlP mb-1">Piloto por un día</p>
+                            <p class="mP mb-4">Nuestro programa más vendido.</p>
+                            <p class="sP mb-0">Viví la experiencia de ser piloto por un día. Incluye
+                                una clase teórica, una experiencia en un simulador de vuelo y un
+                                vuelo en una de nuestras aeronaves C-150 donde podrás poner en práctica
+                                todo lo aprendido en tierra.
+                            </p>
+                            <a href="#" class="greenActiveButton mb-4 mt-4 text-white">Conocé más</a>
+                        </div>
+                        <div class="desktopOrganizerRight">
+                            <div class="defaultPicContainer">
+                                <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="experiencesContainer">
             <div class="marginLeftRight">
-                <p class="mP mb-2 mt-4">EXPERIENCIAS</p>
-                <p class="xxlP mb-1">Isla Martín García</p>
-                <p class="mP mb-4">Una experiencia inolvidable.</p>
-                <p class="sP mb-0">Conocé la Isla Martín García desde otro punto de vista.
-                    Disfrutá de una visita por toda la isla y un almuerzo en el Comedor Solís.
-                </p>
-                <a href="#" class="greenActiveButton mb-4 mt-4 text-white">Conocé más</a>
-
-                <div class="defaultPicContainer">
-                    <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+                <div class="desktopOrganizerMandatory">
+                    <div class="desktopOrganizerRight">
+                        <p class="mP mb-2 mt-4">EXPERIENCIAS</p>
+                        <p class="xxlP mb-1">Isla Martín García</p>
+                        <p class="mP mb-4">Una experiencia inolvidable.</p>
+                        <p class="sP mb-0">Conocé la Isla Martín García desde otro punto de vista.
+                            Disfrutá de una visita por toda la isla y un almuerzo en el Comedor Solís.
+                        </p>
+                        <a href="#" class="greenActiveButton mb-4 mt-4 text-white">Conocé más</a>
+                    </div>
+                    <div class="desktopOrganizerLeft">
+                        <div class="defaultPicContainer">
+                            <img src="./img/fotoTest.png" alt="" class="defaultPic mb-5">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

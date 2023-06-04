@@ -10,82 +10,97 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body pt-3 pb-3">
-            <div class="container-fluid">
-              <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="navMobile">
+            <nav class="navbar bg-body pt-3 pb-3">
+                <div class="container-fluid">
+                  <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoVuelitos">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link"  href="./faq.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">¿Quiénes somos?</a>
+                          </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link text-white" id="purpleButtonActiveMobile" href="./experiencias.html">Nuestras Experiencias</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  href="./faq.html">Preguntas frecuentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./sobre-nosotros.html">¿Quiénes somos?</a>
-                      </li>
-                      <li class="nav-item mt-3">
-                        <a class="nav-link text-white" id="purpleButtonActiveMobile" href="./experiencias.html">Nuestras Experiencias</a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
+              </nav>
             </div>
-          </nav>
     
-        <img src="#" alt="Logotipo vuelitos.ar" class="logoDesktop">
+          <nav class="navDesktop">
+            <img src="../img/logo.png" alt="Logotipo vuelitos.ar" class="logoDesktop">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./faq.html">Preguntas frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./sobre-nosotros.html">¿Quiénes somos?</a></li>
+                <li><a href="./experiencias.html" id="purpleButtonActiveMobile">Nuestras experiencias</a></li>
+            </ul>
+        </nav>
+
     </header>
     
     <main>
-        <div class="marginLeftRight">
-            <p class="mP mb-2 mt-5">PROGRAMAS</p>
-            <p class="xxlP mb-1">Piloto por un día</p>
-            <p class="mP mb-4">Nuestro programa más vendido.</p>
-            <p class="sP mb-0">Viví la experiencia de ser piloto por un día. Incluye
-                una clase teórica, una experiencia en un simulador de vuelo y un
-                vuelo en una de nuestras aeronaves C-150 donde podrás poner en práctica
-                todo lo aprendido en tierra.
-            </p>
-        </div>
+        <div class="desktopOrganizerMandatory">
+            <div class="marginLeftRight">
+                <div class="desktopOrganizerLeft">
+                    <p class="mP mb-2 mt-5">PROGRAMAS</p>
+                    <p class="xxlP mb-1">Piloto por un día</p>
+                    <p class="mP mb-4">Nuestro programa más vendido.</p>
+                    <p class="sP mb-0">Viví la experiencia de ser piloto por un día. Incluye
+                        una clase teórica, una experiencia en un simulador de vuelo y un
+                        vuelo en una de nuestras aeronaves C-150 donde podrás poner en práctica
+                        todo lo aprendido en tierra.
+                    </p>
+            </div>
 
-        <div class="marginLeftRight mt-5">
-            <p class="faqText">Clase teórica en tierra</p>
+            <div class="marginLeftRight mt-5">
+                    <p class="faqText">Clase teórica en tierra</p>
 
-            <p class="m-3">1 hora de clase teórica en tierra, donde aprenderás lo básico de el funcionamiento
-                de un avión, los servicios utilizados durante el vuelo y la presentación de un plan de vuelo.
-            </p>
-        </div>
-
-        
-        <div class="marginLeftRight mt-4">
-            <p class="faqText">Experiencia en simulador de vuelo</p>
-            
-            <p class="m-3">1 hora de experiencia en un simulador de vuelo, donde aprenderás a utilizar
-                los instrumentos de la aeronave para luego ponerlo en práctica en vuelo.
-            </p>
-        </div>
-        
-        <div class="marginLeftRight mt-4 mb-5">
-            <p class="faqText">Vuelo</p>
-
-            <p class="m-3">1 hora de vuelo llevando una ruta por Zona norte (Ruta similar a Experiencia
-                Zona Norte)
-            </p>
-        </div>
+                    <p class="m-3">1 hora de clase teórica en tierra, donde aprenderás lo básico de el funcionamiento
+                        de un avión, los servicios utilizados durante el vuelo y la presentación de un plan de vuelo.
+                    </p>
+            </div>
 
 
-        <div class="experiencesContainer">
+            <div class="marginLeftRight mt-4">
+                    <p class="faqText">Experiencia en simulador de vuelo</p>
+
+                    <p class="m-3">1 hora de experiencia en un simulador de vuelo, donde aprenderás a utilizar
+                        los instrumentos de la aeronave para luego ponerlo en práctica en vuelo.
+                    </p>
+            </div>
+
+            <div class="marginLeftRight mt-4 mb-5">
+                    <p class="faqText">Vuelo</p>
+
+                    <p class="m-3">1 hora de vuelo llevando una ruta por Zona norte (Ruta similar a Experiencia
+                        Zona Norte)
+                    </p>
+            </div>
+                </div>
+
+            <div class="desktopOrganizerRight">
+        <div class="experiencesContainerProgram">
             <div class="marginLeftRight">
                 <div class="text-center mt-4 mb-4">
                     <p class="mPBigger mt-3">AR$ 10.000</p>
@@ -126,8 +141,9 @@
                         <a href="#" class="greenDisabledButton mb-4">Consultar por WhatsApp</a>
                     </div>
                 </div>
-
             </div>
+        </div>
+        </div>
 
         </div>
 
