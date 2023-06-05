@@ -139,13 +139,35 @@ footer{
 
 .tripDuration{
     color: rgb(98, 103, 204);
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(98, 103, 204);
     border-radius: 5px;
     display: inline-block;
     height: 40px;
     line-height: 40px;
     padding: 0 10px;
+}
+
+.tripGift {
+    color: rgb(99, 172, 143);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(99, 172, 143);
+    border-radius: 5px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.tripGift:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 172, 143);
+}
+
+.giftVoucher{
+    width: 300px;
+    border: solid 1px #000000;
 }
 
 .marginLeftRight{
@@ -249,6 +271,10 @@ footer{
         font-size: 25px;
     }
 
+    .giftVoucher{
+        width: 300px;
+        border: solid 1px #000000;
+    }
 
     .logoDesktop{
         width: 280px;
