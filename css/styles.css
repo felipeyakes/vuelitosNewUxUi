@@ -275,10 +275,6 @@ footer{
         justify-content: center;
         align-items: center;
     }
-
-    .mobileIndexBanner{
-        width: 100vw;
-    }
 }
 
 @media (min-width: 600px) {
