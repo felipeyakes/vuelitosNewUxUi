@@ -66,6 +66,10 @@ footer{
     height: 300px;
 }
 
+.whoPic{
+    width: 350px;
+}
+
 
 .defaultPicContainer{
     text-align: center;
@@ -282,6 +286,10 @@ defaultPicContainerGallery{
 
     .defaultPicContainerGallery{
         text-align: center;
+    }
+
+    .whoPic{
+        display: none;
     }
 
 }
