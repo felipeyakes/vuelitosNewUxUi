@@ -97,70 +97,83 @@
                 </div>
 
             <div class="desktopOrganizerRight">
-        <div class="experiencesContainerProgram">
-            <div class="marginLeftRight">
-                <div class="text-center mt-4 mb-4">
-                    <p class="mPBigger mt-3">AR$ 23.100</p>
-                    <div class="d-block">
-                        <p class="tripDuration mt-1">30 MINUTOS DE VUELO</p>
-                    </div>
-                    <div class="d-block">
+              <div class="experiencesContainerProgram">
+                <div class="marginLeftRight">
+                    <div class="text-center mt-4 mb-4">
+                        <div id="questionContainer">
+                            <p class="mPBigger mt-3">¿Para cuántas personas es el paseo?</p>
+                            <p class="mb-4">Seleccioná la cantidad de pasajeros para conocer los detalles.</p>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="d-flex flex-column align-items-center mr-4">
+                                    <button class="passengerButton text-white btn btn-success" data-passengers="1" data-price="28100" data-plane="Cessna 150 (1 PASAJERO)" data-plane-image="../img/indexPlane.png">1 Pasajero</button>
+                                    <span class="priceSpan">$28.100</span>
+                                </div>
+                            
+                                <div class="d-flex flex-column align-items-center mx-2">
+                                    <button class="passengerButton text-white btn btn-success" data-passengers="2" data-price="46200" data-plane="Cessna 172 (2 PASAJEROS)" data-plane-image="../img/C172Plane.png"">2 Pasajeros</button>
+                                    <span class="priceSpan">$46.200</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div id="flightDetailsContainer" style="display: none;">
+                            <p class="mPBigger mt-3">AR$ <span id="flightPrice">null</span></p>
+                            <p class="mb-4" id="elementoACambiar">nullPassengers</p>
+                            <div class="d-block">
+                                <p class="tripDuration mt-1">2 HORAS DE VUELO</p>
+                            </div>
+                            <div class="d-block">
                                 <button type="button" class="tripGift btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Disponible para regalo
-                                  </button>
+                                </button>
+                            </div>
+                            <p class="mP mt-4 mb-5">Incluye</p>
+                            <div class="marginLeftRight mt-3 mb-5">
+                                <p class="faqText mt-3">2 horas de vuelo</p>
+                            </div>
+                            <p class="mP mb-5">¿Con qué aeronave se realizará el vuelo?</p>
+                            <div class="marginLeftRight mt-3 mb-3">
+                                <p class="faqText" id="planeTitle">Cessna 150 (1 PASAJERO)</p>
+                            </div>
+                            <div class="text-center">
+                                <button id="editPassengersButton" class="btn btn-warning mt-3 text-white">Editar Pasajeros</button>
+                            </div>
+                            <div class="defaultPicContainer">
+                                <img src="../img/indexPlane.png" alt="Avión Cessna" class="availablePlane mb-5" id="planeImage">
+                            </div>
+                            <div class="text-center">
+                                <div class="d-block">
+                                    <a href="https://wa.me/5491127459926?text=¡Hola!%20Quiero%20reservar%20la%20experiencia%20Isla%20Martín%20García." class="greenActiveButton mb-4 mt-4 text-white" target="_blank">Reservar</a>
+                                </div>
+                                <div class="d-block">
+                                    <a href="https://wa.me/5491127459926?text=¡Hola!%20Tengo%20algunas%20consultas%20sobre%20la%20experiencia%20Isla%20Martín%20García." class="greenDisabledButton mb-4" target="_blank">Consultar por WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                                  <!-- Modal -->
-                                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Cómo regalar un vuelo?</h1>
-                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <p>Es muy simple, al hacer la reserva, indicá que se trata de un regalo. Te solicitaremos algunos datos más y nosotros nos encargamos del resto. Enviaremos una tarjeta de sorpresa por WhatsApp a quien quieras hacerle el regalo.</p>
-
-                                        <img src="../img/voucher-regalo.jpg" alt="Voucher regalo" class="giftVoucher">
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
                 </div>
-
-                <p class="mP">Incluye</p>
-
-                <div class="marginLeftRight mt-5 mb-5">
-                    <p class="faqText">30 minutos de vuelo</p>
-                </div>
-
-                <p class="mP">¿Con qué aeronave se realizará el vuelo?</p>
-
-                <div class="marginLeftRight mt-5 mb-3">
-                    <p class="faqText">Cessna 150 (1 PASAJERO)</p>
-                </div>
-
-                <div class="defaultPicContainer">
-                    <img src="../img/indexPlane.png" alt="Avión Cessna 150" class="availablePlane mb-5">
-                </div>
-
-                <div class="text-center">
-                    <div class="d-block">
-                        <a href="https://wa.me/5491127459926?text=¡Hola!%20Quiero%20reservar%20la%20experiencia%20Dique%20Cascallares" class="greenActiveButton mb-4 mt-4 text-white" target="_blank">Reservar</a>
-                    </div>
-
-                    <div class="d-block">
-                        <a href="https://wa.me/5491127459926?text=¡Hola!%20Tengo%20algunas%20consultas%20sobre%20la%20experiencia%20Dique%20Cascallares." class="greenDisabledButton mb-4" target="_blank">Consultar por WhatsApp</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Cómo regalar un vuelo?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Es muy simple, al hacer la reserva, indicá que se trata de un regalo. Te solicitaremos algunos datos más y nosotros nos encargamos del resto. Enviaremos una tarjeta de sorpresa por WhatsApp a quien quieras hacerle el regalo.</p>
+                            <img src="../img/voucher-regalo.jpg" alt="Voucher regalo" class="giftVoucher">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-
-        </div>
+    </div>
 
         <div class="experiencesContainer">
             <div class="marginLeftRight">
@@ -191,6 +204,7 @@
         </div>
     </footer>
 
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
